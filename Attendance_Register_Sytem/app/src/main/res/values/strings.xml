@@ -6,4 +6,6 @@
     <string name="not_yet_an_admin_become_one">Not yet an Admin?, Become one</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="first_name">First Name</string>
 </resources>
