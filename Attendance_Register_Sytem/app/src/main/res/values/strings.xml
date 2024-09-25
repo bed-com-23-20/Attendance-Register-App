@@ -6,6 +6,14 @@
     <string name="not_yet_an_admin_become_one">Not yet an Admin?, Become one</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="create_a_new_account">Create a New Account</string>
+    <string name="create_a_new_account">Create Account</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone # Starting With +265</string>
+    <string name="fullname">Fullname</string>
     <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="school_name">School Name</string>
+    <string name="district">District</string>
 </resources>
