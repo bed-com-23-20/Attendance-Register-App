@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/passwordconfirm"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/passcreate"
+            android:textSize="40sp"
+            android:text="@string/create_password"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:translationZ="10dp"
+            android:elevation="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/create_password"
+            android:textColorHint="#CCAAAAAA"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comfimpassword"
+            android:hint="@string/confirm_password"
+            android:textColorHint="#CCAAAAAA"
+            android:textSize="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/back"
+                android:id="@+id/backbt"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="18dp"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/finishbt"
+                android:text="@string/finish"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="18dp"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
