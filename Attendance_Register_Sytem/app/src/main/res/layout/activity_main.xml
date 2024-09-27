@@ -46,6 +46,8 @@
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
+            android:drawableLeft="@drawable/username_vector"
+            android:drawablePadding="10dp"
             android:layout_height="wrap_content"
             android:hint="@string/username"
             android:textColorHint="#CCAAAAAA"
@@ -66,6 +68,8 @@
             android:hint="@string/password"
             android:textColorHint="#CCAAAAAA"
             android:textSize="20sp"
+            android:drawableLeft="@drawable/password_vector"
+            android:drawablePadding="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
