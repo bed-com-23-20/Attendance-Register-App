@@ -9,28 +9,30 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
-   // @SuppressLint("MissingInflatedId")
+class AccountPage : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        setContentView(R.layout.activity_account_page)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.account)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
-
-        }
-        // Adding Navigation Buttons below
-        val createAccount = findViewById<Button>(R.id.account_btn)
-
-        createAccount.setOnClickListener {
-            val intent = Intent(this, AccountPage::class.java)
-            startActivity(intent)
         }
 
+        val cancelbtn = findViewById<Button>(R.id.cancelbtn)
+
+        cancelbtn.setOnClickListener{
+            val intent1 = Intent(this, MainActivity::class.java)
+            startActivity(intent1)
+        }
+
+        val nextbtn = findViewById<Button>(R.id.nextbtn)
+        nextbtn.setOnClickListener{
+            val intent2 = Intent(this, ComfirmPassword::class.java)
+            startActivity(intent2)
+        }
 
     }
 }
